@@ -24,7 +24,7 @@ public class Main {
                 if (lastNameComparison != 0) {
                     return lastNameComparison;
                 }
-                return Double.compare(e1.getSalary(), e2.getSalary());
+                return Double.compare(e2.getYearlySalary(), e1.getYearlySalary());
             }
         });
 
@@ -42,6 +42,13 @@ public class Main {
                 filteredEmployees.add(employee);
             }
         }
+
+        Collections.sort(employees, new Comparator<Employee>() {
+            @Override
+            public int compare(Employee e1, Employee e2) {
+                return e1.getEmploymentDate().compareTo(e2.getEmploymentDate());
+            }
+        });
 
         System.out.println("Printed in JSON Format");
         System.out.println(convertEmployeeListToJson(filteredEmployees));
