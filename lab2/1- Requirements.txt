@@ -1,0 +1,16 @@
+- The system should allow the Office Manager to register Dentists.
+- The system should allow Dentist to apply to join the network of dental surgeries.
+- The system should record Dentist data (a unique ID number and their First Name, Last Name, Contact Phone Number, Email and Specialization).
+- The system should allow The Office Manager to enroll new Patients.
+- The system should record Patient data (First Name, Last Name, Contact Phone Number, Email, Mailing Address and Date of Birth).
+- The system should allow the ptient to request an appointment.
+- The system should allow the Office Manager to book the appointment and the Petient will get notified with this booking.
+- The system should allow the Dentist to sign-in
+- The system should allow the Dentist to view all their Appointments including the details of their Patients who did make the appointment.
+- The system should allow to schedule the Appointment in date, time, location from the patient seeing by a doctor
+- The system should allow to show for each surgery the name, location, telephone number, the dentist who  did or will do the surgery
+- The system should allow the Patient to sign-in.
+- The system should allow the Patient to view their appointments, including the infos of the dentist who will do the surgery
+- The system should allow the Patient to request to cancel or change their appointments.
+- The system should not allow more than 5 appointments in a week.
+- The system should not allow the patient to request a new appointment if they have an outstanding or unpaid bill.
