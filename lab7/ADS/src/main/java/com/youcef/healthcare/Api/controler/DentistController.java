@@ -17,6 +17,6 @@ public class DentistController {
 
     @PostMapping
     public ResponseEntity<?> saveDentist (@RequestBody Dentist dentist){
-    return ResponseEntity.ok(dentistService.saveDentist(dentist));
+        return ResponseEntity.ok(dentistService.saveDentist(dentist));
     }
 }

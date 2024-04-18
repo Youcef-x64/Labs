@@ -53,8 +53,7 @@ public class PatientController {
 
     @GetMapping("/search")
     public ResponseEntity<?> searchByFirstNameOrLastName(@PathVariable String st){
-       return ResponseEntity.ok("hellllllllllo from secured");
-        //return ResponseEntity.ok(patientService.searchByFirstNameOrLastName(st));
+       return ResponseEntity.ok(patientService.searchByFirstNameOrLastName(st));
     }
 
 }
