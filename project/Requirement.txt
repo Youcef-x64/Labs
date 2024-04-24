@@ -1,0 +1,43 @@
+-- Patient
+* register/edit
+* Search for nearby pharmacies, doctors, clinics, laboratories, hospitals
+* Filter by nearby, rate, open
+
+Doctor
+* Filter doctors by speciality
+* 
+* Get list of each medical record from each doctor or clinic
+* Select which one to give to and give it to the doctor
+* See doctors perscription and medical tests
+
+Clinic
+* Get list of each medical record from each doctor or clinic
+* Select which one to give to and give it to the Clinic
+* See clinics perscription and medical tests
+
+Lab
+* Filter by who can do all the medical tests based on what doctor or clinic describe
+* Get list of each medical tests based on doctor or clinic
+* Select which one to give and give it to the lab
+* See labs result
+
+* make, edit, cancel an appointment with a doctor, clinic, or laboratory
+
+*_ search for nurses
+*_ request nurse service
+
+*_ accept blood donation
+*_ direction to blood donation location
+
+-- Doctor
+* register/edit
+* Search for patients
+* Sort by appointment time [default] (refresh if he stay on the same page and there is new patient), name, age, number of visits
+* Filter by appointment date [default] (refresh), apntmnt status
+
+* See medical records
+* Give perscription and medical tests
+
+-- 
+
+
