@@ -1,11 +1,12 @@
 -- Patient
 * register/edit
-* Search for nearby pharmacies, doctors, clinics, laboratories, hospitals
-* Filter by nearby, rate, open
+* Search for pharmacies, doctors, clinics, laboratories, hospitals
+* Filter by nearby radius, rate, open
+* Get list of the reviews
 
 Doctor
 * Filter doctors by speciality
-* 
+* See/make/cancel appointment
 * Get list of each medical record from each doctor or clinic
 * Select which one to give to and give it to the doctor
 * See doctors perscription and medical tests
@@ -30,7 +31,7 @@ Lab
 *_ direction to blood donation location
 
 -- Doctor
-* register/edit
+* register (shift)/edit
 * Search for patients
 * Sort by appointment time [default] (refresh if he stay on the same page and there is new patient), name, age, number of visits
 * Filter by appointment date [default] (refresh), apntmnt status
@@ -38,6 +39,37 @@ Lab
 * See medical records
 * Give perscription and medical tests
 
--- 
+* Get/report reviews
+* Param hide visitor number show static in profile
+
+-----------------------
+be carefull when changing, like shift consider creating a new one because you don't want to lose data related to that shift, shift it is just an example - if effect pass consider keeping it for records don't just modify it, if effect future consider changing appointment example
+- when updating shifts you need to reschedule future appointments first
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------ Security
+- when someone want to edit post you need to virify that he own the post by  looking for the post by his id in the database when find it modify it.
+
+------ To add
+- Internationalization
+- String size in entity
+- check input validity
+- Filter using geofence (give it to user to select)
+- Real-time appointment (when someone book notify who is looking to book)
+- Date validation when booking

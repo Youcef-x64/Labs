@@ -23,9 +23,9 @@ public class DoctorReview {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dateTime;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Doctor doctor;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Patient patient;
 
 }

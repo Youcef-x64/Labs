@@ -18,7 +18,7 @@ public class Day {
     private Long id;
     private String name;
 
-    @OneToMany(mappedBy = "day")
+    @OneToMany(mappedBy = "day", cascade = CascadeType.PERSIST)
     private List<DoctorShift> shift;
 
 }

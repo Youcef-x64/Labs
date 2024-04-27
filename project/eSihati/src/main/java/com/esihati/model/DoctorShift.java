@@ -22,9 +22,9 @@ public class DoctorShift {
     @DateTimeFormat(pattern = "HH:mm:ss")
     private LocalTime endTime;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Day day;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Doctor doctor;
 
 }

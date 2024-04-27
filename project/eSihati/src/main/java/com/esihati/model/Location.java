@@ -14,11 +14,11 @@ public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private State state;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private City city;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private GeoLocation geoLocation;
 
 }

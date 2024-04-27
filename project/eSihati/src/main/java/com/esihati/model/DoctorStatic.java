@@ -16,14 +16,14 @@ public class DoctorStatic {
     private Long id;
     private Long viewNumber;
     private Long visitorNumber;
-    private Integer rate;
+    private Float rate;
     private Integer rateStarOne;
     private Integer rateStarTwo;
     private Integer rateStarThree;
     private Integer rateStarFour;
     private Integer rateStarFive;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Doctor doctor;
 
 }

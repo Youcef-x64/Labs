@@ -19,9 +19,9 @@ public class _User {
     private String phone;
     private String encryptedPassword;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     private Role role;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Location location;
 
 }

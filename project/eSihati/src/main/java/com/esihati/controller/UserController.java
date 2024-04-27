@@ -19,8 +19,8 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public _User findById(@PathVariable Long id) {
-        return userService.findById(id);
+    public Patient findById(@PathVariable Long id) {
+        return (Patient) userService.findById(id);
     }
 
 }
